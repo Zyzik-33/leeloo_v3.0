@@ -45,14 +45,14 @@ const StyledImage = styled(Image)`
   top: 0;
   right: 0;
   width: 40%;
-  height: 99vh;
+  height: 100vh;
   object-fit: cover;
   @media (max-width: 1024px) {
     position: absolute !important;
     top: 86%;
     right: 0;
     width: 100%;
-    height: 99vh;
+    height: 100vh;
     object-fit: cover;
   } ;
 `
