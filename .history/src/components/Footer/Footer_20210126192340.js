@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCoffee } from "@fortawesome/free-solid-svg-icons"
 
 const FooterBar = styled.div`
   width: 100vw;
@@ -18,7 +18,9 @@ const Footer = () => {
     <>
       <FooterBar>
         <ul>
-          <li><a href=""></a></li>
+          <li>
+            <a href=""></a>
+          </li>
         </ul>
       </FooterBar>
     </>

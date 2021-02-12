@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook } from '@fortawesome/free-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFacebook } from "@fortawesome/free-svg-icons"
 
 const FooterBar = styled.div`
   width: 100vw;
@@ -19,7 +19,9 @@ const Footer = () => {
     <>
       <FooterBar>
         <ul>
-          <li><a href="#">{fbIcon}</a></li>
+          <li>
+            <a href="#">{fbIcon}</a>
+          </li>
         </ul>
       </FooterBar>
     </>
