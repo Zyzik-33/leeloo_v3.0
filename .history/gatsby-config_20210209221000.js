@@ -1,0 +1,57 @@
+require("dotenv").config()
+
+module.exports = {
+  siteMetadata: {
+    title: `LeeLoo website`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `zyzik`,
+    social: [
+      {
+        name: "Source",
+        url: "https://github.com/epilande/gatsby-theme-gallery",
+      },
+      {
+        name: "Twitter",
+        url: "https://twitter.com/_epilande",
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com/epilande",
+      },
+    ],
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-layout`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: ["work sans:200,400,700"],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-theme-gallery`,
+    {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: `image`,
+        maxResults: `1000`,
+        tags: `true`,
+        context: `true`,
+        prefix: `gatsby-source-cloudinary/`,
+      },
+    },
+  ],
+}

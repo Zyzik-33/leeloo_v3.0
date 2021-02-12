@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
 const FooterBar = styled.div`
   width: 100vw;
@@ -30,8 +30,22 @@ const Footer = () => {
     <>
       <FooterBar>
         <Social>
-          <li><a href="https://www.facebook.com/drahomaretskaphotography" target="_blank">{fbIcon}</a></li>
-          <li><a href="https://www.instagram.com/drahomaretska.photography" target="_blank">{instaIcon}</a></li>
+          <li>
+            <a
+              href="https://www.facebook.com/drahomaretskaphotography"
+              target="_blank"
+            >
+              {fbIcon}
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/drahomaretska.photography"
+              target="_blank"
+            >
+              {instaIcon}
+            </a>
+          </li>
         </Social>
       </FooterBar>
     </>
