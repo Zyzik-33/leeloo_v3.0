@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import "../../assets/styles/gallery.css"
-import images from "../../assets/styles/prev-obj/images-love"
+import images from "../../assets/images/prev-obj/images-love"
 
 const LoveStory = () => {
   return (

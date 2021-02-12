@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 import "../../assets/styles/gallery.css"
-import images from "../../assets/styles/prev-obj/images-love"
+import images from "../../assets/images/prev-obj/images-portraits"
 
-const LoveStory = () => {
+const Portraits = () => {
   return (
     <div>
       <div className="image-grid">
@@ -14,7 +14,7 @@ const LoveStory = () => {
             <div className="prev-album">
               <img key={id} src={src} title={title} alt={description} />
               
-              <Link to={`/love-story/${slug}`}>
+              <Link to={`/portraits/${slug}`}>
                 <div className="content">
                 
                 <div className="text">{`${title}`}</div>
@@ -24,9 +24,9 @@ const LoveStory = () => {
           
         </div>
       ))}
-      </div>
+    </div>
     </div>
   )
 }
 
-export default LoveStory
+export default Portraits
