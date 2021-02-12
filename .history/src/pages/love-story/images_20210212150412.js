@@ -2,7 +2,6 @@ import AniaElkhan from "../../assets/images/prev-lovestory/ania-elkhan"
 import IraSasha from "../../assets/images/prev/amina.jpg"
 import Arina from "../../assets/images/prev/arina.jpg"
 
-
 const images = [
   { id: 1, src: Aga, title: "Aga", description: "photos of Aga", slug: "aga" },
   {

@@ -10,9 +10,8 @@ const Portraits = () => {
   return (
     <div>
       <div className="image-grid">
-      {images.map(({ id, src, title, description, slug }) => (
-        <div className="image-item">
-          
+        {images.map(({ id, src, title, description, slug }) => (
+          <div className="image-item">
             <div className="prev-album">
               <img key={id} src={src} title={title} alt={description} />
               <div className="content">
@@ -20,10 +19,9 @@ const Portraits = () => {
                 <Link to={`/portraits/${slug}`}></Link>
               </div>
             </div>
-          
-        </div>
-      ))}
-    </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
